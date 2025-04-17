@@ -31,33 +31,33 @@ import {
   List as ListIcon
 } from '@mui/icons-material';
 
-// Theme with blue colors and red icon
+
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#1976d2', // Blue color
+      main: '#1976d2', 
       contrastText: '#fff',
     },
     secondary: {
-      main: '#388e3c', // Green color for buttons
+      main: '#388e3c', 
     },
     background: {
       default: '#fafafa',
       paper: '#ffffff',
     },
     error: {
-      main: '#d32f2f', // Red color for hospital icon
+      main: '#d32f2f', 
     }
   },
   typography: {
     h4: {
       fontWeight: 700,
       marginBottom: '1rem',
-      color: '#1976d2', // Blue color for text
+      color: '#1976d2', 
     },
     h5: {
       fontWeight: 600,
-      color: '#1976d2', // Blue color for text
+      color: '#1976d2', 
       marginTop: '2rem',
     },
     body1: {
