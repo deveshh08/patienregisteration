@@ -29,10 +29,9 @@ class Patient(Base):
     contact = Column(String)
     created_at = Column(DateTime, default=datetime.utcnow)
 
-# Create tables
+
 Base.metadata.create_all(bind=engine)
 
-# Pydantic model
 class PatientCreate(BaseModel):
     name: str
     age: int
@@ -55,10 +54,10 @@ app = FastAPI(
 
 from fastapi.middleware.cors import CORSMiddleware
 
-# Add this after creating the FastAPI app (after `app = FastAPI()`)
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3001"],  # React's default port
+    allow_origins=["http://localhost:3001"],  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
